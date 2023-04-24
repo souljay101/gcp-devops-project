@@ -30,9 +30,9 @@ metadata:
     app.kubernetes.io/managed-by: "gcp-cloud-build-deploy"
 spec:
   ports:
-    - protocol: TCP
+    - protocol: "TCP"
       port: 80
       targetPort: 5000
-    selector:
+  selector:
       app: "gcp"
-    type: "LoadBalancer"
+  type: "LoadBalancer"
